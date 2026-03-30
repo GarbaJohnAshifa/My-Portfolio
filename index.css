@@ -1,4 +1,4 @@
-@import URL('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap')
+@import URL('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 :root{
     --yellow:#f9ca24;
 }
@@ -101,7 +101,6 @@ header .navbar ul{
     padding: 1rem 3rem;
 }
 header .navbar ul li a{
- 
     display:block;
     padding: 1rem;
     margin: 1.5rem 0;
@@ -138,9 +137,6 @@ header .navbar ul li a:hover{
 .home h1{
     font-size: 2.5rem;
     color: #fff;
-}
-.home h1 span{
-
 }
 .home p{
     font-size: 2rem;
@@ -424,56 +420,111 @@ header .navbar ul li a:hover{
     padding-right: 1rem;
     color: yellow;
 }
-@media(max-width: 400px){
-    html{
-        font-size: 55.5%;
-    }
-}
 @media(max-width: 768px){
     html{
-        font-size: 50px;
+        font-size: 56.25%;
     }
     body{
         padding-left: 0;
     }
-    header{
-        width: 100vw;
-    }
     #menu{
         display: block;
     }
+    header{
+        left: -120%;
+        width: 32rem;
+    }
     header.toggle{
-        left: -35rem;
+        left: 0;
+    }
+    section{
+        min-height: auto;
+        padding: 2rem;
+    }
+    .home{
+        padding: 2rem 1rem;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .home h1,
+    .home h3,
+    .home p{
+        width: 100%;
+    }
+    .heading{
+        margin: 0 1rem;
+    }
+    .about .row .info{
+        padding-left: 0;
+    }
+    .about .row .counter{
+        max-width: 100%;
+        width: 100%;
+    }
+    .education .box-container .box{
+        margin-left: 2.5rem;
+    }
+    .contact .row .content,
+    .contact .row .contact-form{
+        padding: 2rem 1rem;
+        margin: 1rem 0;
     }
 }
 
-
-
-
-
-
-
-
-
-
+@media(max-width: 480px){
+    html{
+        font-size: 50%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    header{
+        width: 100%;
+    }
+    .btn{
+        padding: .7rem 2rem;
+    }
+    .about .row .counter{
+        grid-template-columns: 1fr;
+    }
+    .portfolio .box-container{
+        gap: 1.2rem;
+    }
+    .portfolio .box-container .box .video-wrapper{
+        height: 20rem;
+    }
+    .education .box-container .box span{
+        white-space: normal;
+    }
 }
 
-
- 
+@media(max-width: 360px){
+    html{
+        font-size: 46.875%;
+    }
+    #menu{
+        top: 1.2rem;
+        right: 1.2rem;
+        padding: .8rem 1.2rem;
+    }
+    section{
+        padding: 1.4rem;
+    }
+    .heading{
+        font-size: 3.2rem;
+        margin: 0;
+    }
+    .home p{
+        font-size: 1.8rem;
+    }
+    .portfolio .box-container .box .video-wrapper{
+        height: 17rem;
+    }
+    .portfolio .box-container .box .box-info{
+        padding: 1.2rem;
+    }
+    .portfolio .box-container .box .box-info h3{
+        font-size: 1.7rem;
+    }
+    .contact .row .content,
+    .contact .row .contact-form{
+        padding: 1.4rem .8rem;
+    }
+}
